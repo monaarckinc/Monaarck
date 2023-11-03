@@ -831,6 +831,10 @@ a:hover {
   background: #f7f7f7;
   padding: 80px 0;
 }
+#contact iframe.map-for-web {
+  height: 30rem;
+  width: 100%;
+}
 
 #contact h2 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
