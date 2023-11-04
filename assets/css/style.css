@@ -143,7 +143,7 @@ a:hover {
 --------------------------------------------------------------*/
 #header {
   background: var(--theme-color);
-  height: 70px;
+  height: 90px;
 }
 
 #header #logo h1 {
@@ -164,7 +164,7 @@ a:hover {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 55px;
+  max-height: 85px;
 }
 
 .scrolled-offset {
@@ -307,14 +307,15 @@ a:hover {
 section.points-content {
   position: relative;
   overflow: hidden;
+  padding: 1rem 0;
 }
 section.points-content .content-card {
-  padding: 5rem 4rem 4rem;
+  padding: 1rem 2rem 0;
   background: rgba(255, 255, 255, 0.431372549);
   box-shadow: 0px 0px 13px 0px rgba(6, 0, 53, 0.0784313725);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
   font-size: 1.3rem;
   border-radius: 0.5rem;
   align-items: center;
@@ -325,18 +326,17 @@ section.points-content .content-card .count-div {
   align-items: center;
   font-size: 9rem;
   font-weight: 900;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 section.points-content .content-card .count-div span {
-  height: 6rem;
   overflow: hidden;
-  line-height: 7rem;
+  line-height: normal;
   display: flex;
   align-items: start;
-  margin-top: -2rem;
   background: linear-gradient(120deg, #f2493b, #f69659);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: -2rem;
 }
 section.points-content .content-card h3 {
   font-size: 2rem;
