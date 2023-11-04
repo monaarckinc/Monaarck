@@ -8,7 +8,7 @@
 :root {
   --theme-color: #f25440;
   --theme-color-dark: #e73916;
-  --theme-white:#fff;
+  --theme-white: #fff;
 }
 
 h1,
@@ -302,6 +302,45 @@ a:hover {
   top: 0;
   left: 100%;
   visibility: visible;
+}
+
+section.points-content {
+  position: relative;
+  overflow: hidden;
+}
+section.points-content .content-card {
+  padding: 5rem 4rem 4rem;
+  background: rgba(255, 255, 255, 0.431372549);
+  box-shadow: 0px 0px 13px 0px rgba(6, 0, 53, 0.0784313725);
+  margin-bottom: 3rem;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+section.points-content .content-card .count-div {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 9rem;
+  font-weight: 900;
+  margin-right: 4rem;
+}
+section.points-content .content-card .count-div span {
+  height: 6rem;
+  overflow: hidden;
+  line-height: 7rem;
+  display: flex;
+  align-items: start;
+  margin-top: -2rem;
+  background: linear-gradient(120deg, #f2493b, #f69659);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.points-content .content-card h3 {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 section.inner-banner {
