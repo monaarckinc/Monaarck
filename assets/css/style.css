@@ -352,6 +352,13 @@ section.points-content .content-card h3 {
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+  .content-card {
+    flex-direction: column !important;
+    padding: 2rem !important;
+    text-align: center;
+  }
+}
 section.inner-banner {
   position: relative;
   overflow: hidden;
