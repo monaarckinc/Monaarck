@@ -161,7 +161,6 @@ a.call-button {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   margin-left: 1.5rem;
-  display: flex;
   gap: 0.5rem;
   font-weight: bold;
 }
@@ -351,6 +350,13 @@ section.points-content {
       font-size: 2rem;
       font-weight: 500;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-card {
+    flex-direction: column !important;
+    padding: 2rem !important;
+    text-align: center;
   }
 }
 // -------------Inner Page Points Content ------------------------------
