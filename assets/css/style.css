@@ -352,6 +352,40 @@ section.points-content .content-card h3 {
   font-weight: 500;
 }
 
+.slider-container {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.slider-container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  z-index: 1;
+  background: linear-gradient(90deg, #fff 20%, transparent);
+}
+.slider-container:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  z-index: 1;
+  background: linear-gradient(-90deg, #fff 20%, transparent);
+}
+.slider-container img {
+  height: 5rem;
+  width: auto;
+  padding: 0 1rem;
+}
+.slider-container .slick-track {
+  padding: 1rem 0;
+}
+
 @media screen and (max-width: 768px) {
   .content-card {
     flex-direction: column !important;

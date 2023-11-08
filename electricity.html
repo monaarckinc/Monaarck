@@ -45,6 +45,10 @@
       href="assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -362,6 +366,55 @@
           </div>
         </div>
       </div>
+
+      <div class="client-logo-slider py-5 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="mb-4">Companies We Work With</h2>
+              <p class="mb-4">
+                We compare prices among the most trusted utility suppliers in
+                UK.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-container">
+          <div class="logo-slide">
+            <img src="./assets/img/Logos/BritishGas.png" alt="British Gas" />
+          </div>
+          <div class="logo-slide">
+            <img src="./assets/img/Logos/CNG.jpeg" alt="CNG" />
+          </div>
+          <div class="logo-slide">
+            <img
+              src="./assets/img/Logos/CrownGasPower.jpeg"
+              alt="Crown Gas Power"
+            />
+          </div>
+          <div class="logo-slide">
+            <img src="./assets/img/Logos/eon.jpeg" alt="Eon" />
+          </div>
+          <div class="logo-slide">
+            <img src="./assets/img/Logos/Gazprom.jpeg" alt="Gazprom" />
+          </div>
+          <div class="logo-slide">
+            <img src="./assets/img/Logos/Npower.jpeg" alt="Npower" />
+          </div>
+          <div class="logo-slide">
+            <img src="./assets/img/Logos/OpusEnergy.jpeg" alt="Opus Energy" />
+          </div>
+          <div class="logo-slide">
+            <img
+              src="./assets/img/Logos/scotishpower.jpg"
+              alt="Scotish Power"
+            />
+          </div>
+          <div class="logo-slide">
+            <img src="./assets/img/Logos/sse.jpeg" alt="SSE" />
+          </div>
+        </div>
+      </div>
     </main>
     <!-- End #main -->
 
@@ -414,6 +467,8 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
@@ -429,6 +484,18 @@
             header.classList.add("active");
           }
         });
+      });
+
+      $(".slider-container").slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        centerMode: true,
+        variableWidth: true,
+        arrows: false,
+        speed: 3000,
+        cssEase: "linear",
       });
     </script>
   </body>
